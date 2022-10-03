@@ -1,0 +1,106 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.juntar{
+    display: inline;
+}
+body{
+    background: #E5E5E5;
+}
+.caja{
+    width: 1440px;
+    position: relative;
+    margin: 0 auto;
+}
+h1 img{
+    margin-top: 15px;
+}
+#mensaje, #desc{
+    padding-left: 40px;
+    width: 20%;
+    background: #E5E5E5;
+    color: #0A3871;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    border: none;
+}
+textarea::placeholder {
+    color: #0A3871;
+    border: none;
+
+}
+form{
+    margin: 120px 0;
+}
+.acomodar{
+    margin-left: 120px;
+    display: inline-block;
+}
+.copyright{
+    display: inline-block;
+    font-size: 10px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px;
+    gap: 8px;
+
+    width: 200px;
+    height: 30px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: inline-block;
+    color: #E5E5E5;
+
+}
+.boton{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px;
+    gap: 8px;
+
+    width: 200px;
+    height: 30px;
+
+    /* Dark blue/dark-blue-300 */
+
+    background: #E5E5E5;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: inline-block;
+    color: #0A3871;
+}
+#botones{
+    padding: 10px 0 0 100px;
+}
+.productos{
+    background: white;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+}

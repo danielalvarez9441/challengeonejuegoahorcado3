@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="pagina.css">
+</head>
+<body>
+<header class="caja">
+    <h1><img src="/imagenes/Vector.png"></h1>
+</header>
+<main>
+    <div class="juntar">
+        <textarea cols="70" rows="10" id="mensaje" placeholder="Ingresa texto aqui" ></textarea>
+        <div class="productos">
+            <img src="imagenes/Muñeco.png" alt="imagen-texto" id="imagen">
+            <p class="producto-descripcion" id="desc">Ningun mensaje fue encontrado</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="acomodar">
+        <img src="imagenes/valida.png" alt="Logo">
+        <p class="copyright">solo letras mayusculas y minusculas sin acentos</p>
+    </div>
+    <div id="botones">
+        <button type="button" onclick="encriptarTexto()" class="botones">Encriptar</button>
+        <button type="button"  onclick="alert('Hello world!')" class="boton">Desencriptar</button>
+    </div>
+    <script>
+        function cambiar (datos) {
+            contador =0;
+            for (i=0;i<datos.length;i++){
+
+                if(datos.codePointAt(i)<=95){
+
+                }else{
+                    console.log(datos.codePointAt(i));
+                    contador++;
+                }
+            }
+            if(contador>0){
+                console.log("acata");
+            document.getElementById("imagen").style.display='none';
+            document.getElementById('desc')
+                .innerHTML=datos;
+            contador =0;
+            }
+        }
+        function encriptarTexto(){
+            var datos = document.querySelector("textarea").value;
+            arrayDatos = datos.split('');
+            if(arrayDatos.length>0){
+                cambiar(datos, arrayDatos);
+            }
+
+        }
+
+    </script>
+</footer>
+
+</body>
+</html>
